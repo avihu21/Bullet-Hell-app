@@ -24,7 +24,7 @@ class Bob {
         //load from his .png file
         //bob practices responsible encapsulation
         //looking after his own resource
-        mBitmap = BitmapFactory.decodeResource(context.getResources(),R.drawableנob); //need to add bob.png to get rid of this error
+        mBitmap = BitmapFactory.decodeResource(context.getResources(),R.drawable.bob); //need to add bob.png to get rid of this error
 
     }
 
@@ -33,7 +33,7 @@ class Bob {
         boolean success = false;
 
         //move bob to the new position
-        //if not already teleporting
+        //if not already telporting
         if(!mTeleporting){
             //make him roughly central to the touch
             mRect.left = newX - mBobWidth/2;

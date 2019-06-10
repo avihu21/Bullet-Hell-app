@@ -1,16 +1,14 @@
 package com.tegi.bullethell;
 
 import android.graphics.Point;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.app.Activity;
-import android.os.Bundle;
 import android.view.Display;
 
 //this class is almost exactly
 //the same as the pong project
 
-public class BulletHellActivity extends AppCompatActivity {
+public class BulletHellActivity extends Activity {
 
     //an instance of the main class of this project
     private BulletHellGame mBHGame;
