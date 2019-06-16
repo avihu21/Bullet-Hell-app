@@ -87,6 +87,7 @@ class BulletHellGame extends SurfaceView implements Runnable {
         //initialize the sound pool
         if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP){
             AudioAttributes audioAttributes = new AudioAttributes.Builder().setUsage(AudioAttributes.USAGE_MEDIA).setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION).build();
+            mSP = new SoundPool.Builder().setMaxStreams(5).setAudioAttributes(audioAttributes).build();
         }else{
             mSP = new SoundPool(5,AudioManager.STREAM_MUSIC,0);
         }
